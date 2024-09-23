@@ -22,8 +22,35 @@ recipe can be create using 2 methods. 1. our own 2. cloning
 3. actions: all of the steps that you would want to execute in your recipe. no limit for actions.
 if we dont have trigger then recipe will not start.
 2 ways to share recipe:
-1. List recipe:
-2. Private sharing link:
+1. List recipe: we have list of the recipes
+2. Private sharing link: sharing link it will be private.
+Connections: when we are connect to other applications inside worato. it allows you to pick authentication options
+basic auth, Oauth2, API tokens, custom protocols.It is simple like username and password.
+Triggers have different types:
+1. Real-time: implemented with web hooks
+2. Polling- implemented with web hooks
+3. Scheduled- scheduling the time
+Trigger events are delivered in the same order as events were created or modified in theapp- workato cursors.
+Trigger conditions: you are able to define more information in your triggers if you do not want to process all of the records.
+recipe steps can be simple actions, or control flow statements that help you describe business logic.
+what work does your recipe do:
+1. actions types- adding, searching,updating, deleting
+2. control- conditions, loops,error monitor(try-catch), stop, Recipe functions.
+3. Data- single, Batch/list.
+Data mapping- mapping, formulas, lookups.
+Recipe data box, this is a placeholder for the information from your previous steps.
+data pills: information in recipe box which we have in small boxes with data.
+.slice(start_index,length)- get part of a string.
+Data types: data pills can be of the following 
+string, integer, number, object, date, date time, boolean, Array.list.
+Formula Mode- 
+split: split up a string based on a delimiter
+First: Returns the first iteam in the list.
+Upcase: coverts the entire string into upper case
+
+
+
+
 
 
 
