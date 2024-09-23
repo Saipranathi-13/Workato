@@ -50,6 +50,34 @@ Upcase: coverts the entire string into upper case
 
 
 
+Automation pro 2
+
+
+
+Conditional Actions: set a condition within your recipe to better define the overall workflow processing logic.
+Conditional Actions will only be carried out only if the specified condition is true.
+2 types of conditional actions:
+1. IF- will only be executed when the conditions are met.
+2. IF-ELSE- if conditions are true, actions within the if block will be executed . otherwise if false the actions within the else block will be executed.
+Workato will work on nested conditional actions.
+ we have 3 different fileds to configure conditional actions
+1. data field: typically mapped by a dynamic data pill
+2. condition: depends on data type 
+3. value: mapped by a fixed input value.
+conditions are sensitive to data types.
+common use cases:
+1. Deduplication logic
+2. stopping the recipe
+3. invoking different function recipes.
+4. setting up notifications for different error messages.
+Error Handling: used to monitor actions and retry failed steps
+configuring error monitoring and handling:
+1. retry the sequence of actions
+2. take remedial actions
+
+
+
+
 
 
 
