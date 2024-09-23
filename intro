@@ -1,0 +1,14 @@
+What is Workato?
+It is defined with 2 words called work and automation. Workato is essentially an enterprise garde automation platform
+in It finance and all the different departments we can use waorkato and we can build automation.Workato is essentially serverless platform
+Workato, It allows users to automate business processess like this in a very usual visual way without a developer skill set.
+This is what refer to low code. no code
+Tools in workato:
+ETL/ELT: involving bulk. Transfer of data could be thousands of records or millions of records.
+API Management: can expose your integration to external parties or apps if required, where workato
+can also create workflow.
+coversational bots are able to build and deploy interactive work bots in workplace.
+Workato environment- workato workspaces- different integration that will be building our recipes.
+1. Dev Workspaces:  
+2. QA workspace:
+3. Prod workspace:
