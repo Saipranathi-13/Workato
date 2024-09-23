@@ -7,8 +7,23 @@ Tools in workato:
 ETL/ELT: involving bulk. Transfer of data could be thousands of records or millions of records.
 API Management: can expose your integration to external parties or apps if required, where workato
 can also create workflow.
-coversational bots are able to build and deploy interactive work bots in workplace.
-Workato environment- workato workspaces- different integration that will be building our recipes.
-1. Dev Workspaces:  
-2. QA workspace:
-3. Prod workspace:
+conversational bots are able to build and deploy interactive work bots in the workplace.
+Workato environment- workato workspaces- different integrations that will be building our recipes.
+1. Dev Workspaces: developing recipes in development team
+2. QA workspace: QA team to check your recipe 
+3. Prod workspace: all of your instances are connected to your production environment.
+Recipes can be migrated from one account to another via the Recipe Lifecycle Management tool.
+Each Workato user may be given access to multiple environment.
+Recipe is very similar to like a cookbook. It is logical steps that will be executed to meet your integration.
+recipe can be create using 2 methods. 1. our own 2. cloning
+3 main ingredients of a recipe
+1. Connections: all applications need to have connected to your recipe.
+2. Trigger: can only be 1, what your recipe will listen for, or this is what will tell your recipe to kick start.
+3. actions: all of the steps that you would want to execute in your recipe. no limit for actions.
+if we dont have trigger then recipe will not start.
+2 ways to share recipe:
+1. List recipe:
+2. Private sharing link:
+
+
+
