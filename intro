@@ -66,7 +66,7 @@ Workato will work on nested conditional actions.
 3. value: mapped by a fixed input value.
 conditions are sensitive to data types.
 common use cases:
-1. Deduplication logic
+1. Deduplication logic: when you sync over information to other, there would not be the same record combined. 
 2. stopping the recipe
 3. invoking different function recipes.
 4. setting up notifications for different error messages.
@@ -74,6 +74,37 @@ Error Handling: used to monitor actions and retry failed steps
 configuring error monitoring and handling:
 1. retry the sequence of actions
 2. take remedial actions
+common mistakes:
+1. using too much try/catch
+2. neglecting to mark the job as "failed" when using the stop action
+We do not have limit to create the nested monitor blocks.
+Maximum error retries that can use is 3 times and can also change the interval b/w these 3 tries. it can be 6 or 4 or 1 seconds.
+Repeat Actions: Loop through a list of records
+The repeat action is useful for going through that certain batch of records.
+Repeat action is useful to go through each item in your batch dispatch.
+common use cases:
+1. csv/database rows
+2. order line items
+3. any type of list/array
+Variables: placeholder to store data used to refer the information and also we can manipulate the information
+common use cases of variables:
+Transforming data
+   Formulas- reducing complexity with variables
+   Lists
+An uninitialized variable has a value of null or nill.
+Environment properties can be re-used in recipes. 
+Default value of a variable with a type of "integer" if it is not specified by the user- nill
+
+Lookup tables: mini-database table
+organized like a database table with columns and rows of data. 
+common use cases:
+static reference data
+temporary logs/error handling
+compiling data for daily reports
+mistakes: 
+storing large amounts of data
+storing lookup data that already exists in source systems.
+The total no of rows we can retrieve from a lookup table: 10,000
 
 
 
