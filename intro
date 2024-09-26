@@ -37,6 +37,8 @@ what work does your recipe do:
 1. actions types- adding, searching,updating, deleting
 2. control- conditions, loops,error monitor(try-catch), stop, Recipe functions.
 3. Data- single, Batch/list.
+OOB(out-of-the-box) actions:
+   create, update,upsert,search,get delete.
 Data mapping- mapping, formulas, lookups.
 Recipe data box, this is a placeholder for the information from your previous steps.
 data pills: information in recipe box which we have in small boxes with data.
@@ -47,6 +49,31 @@ Formula Mode-
 split: split up a string based on a delimiter
 First: Returns the first iteam in the list.
 Upcase: coverts the entire string into upper case
+Intelligent business processes:
+1. Enterprise-grade foundation
+2. citizen integrators
+3. Conversational integration
+4. It governance 
+5. Extensible platform
+Levels of functionality:
+   1. Data integration: data integration without any manual effort and without data duplication.
+   2. Process integration: such as workflow automation, which enables u to create efficent business processes across multiple applications.
+   3. Experience integration: can talk to your applications or business processes to send important notifications or carry out commands on your behalf.
+Intelligent process automation: It is a workflow that starts with a trigger event and a list of one or more actions.
+Workato recipe allows you to automate processes b/w the tools, systems, and apps that you use.
+Assets include smart folders for Recipes and Connections you've created in your account. You can also access your Trash bin from here.
+Projects help you create, organize, and manage your automation lifecycle to meet your business goals by grouping people and assets that work together.
+The Operations hub dashboard allows users to visualize real-time data pertaining to the recipes and connections in their Workato account at a glance. It provides key insights, analytics, and actions so you can discover and resolve issues faster.
+Workato Tools help perform three main functions: Build recipes, connect apps and collaborate and manage recipes
+Recipes are automated workflows built by users that can span multiple applications and are simple yet powerful. 
+The Workato recipe editor is the powerhouse of the Workato platform and the main area of focus throughout this course.
+
+
+
+
+
+
+
 
 
 
