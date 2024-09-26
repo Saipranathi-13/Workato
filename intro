@@ -52,7 +52,7 @@ Upcase: converts the entire string into upper case.
 Testing ensures your automation's behavior and data processing are correct.
 The Operations hub dashboard, accessed through the navigation bar, allows you to visualize real-time data pertaining to the recipes and connections in your Workato account at a glance.
 If the recipe is edited and saved, the recipe will increment to a new version.
-Types of recipe changes:
+Types of recipe changes : 
    1. schema changes: changing the schema of the recipe
    2. logic changes: changing the logic of the recipe
 3 parts of the setting tab
