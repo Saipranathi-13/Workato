@@ -48,7 +48,22 @@ string, integer, number, object, date, date time, boolean, Array.list.
 Formula Mode- 
 split: split up a string based on a delimiter
 First: Returns the first iteam in the list.
-Upcase: coverts the entire string into upper case
+Upcase: converts the entire string into upper case.
+Testing ensures your automation's behavior and data processing are correct.
+The Operations hub dashboard, accessed through the navigation bar, allows you to visualize real-time data pertaining to the recipes and connections in your Workato account at a glance.
+If the recipe is edited and saved, the recipe will increment to a new version.
+Types of recipe changes:
+   1. schema changes: changing the schema of the recipe
+   2. logic changes: changing the logic of the recipe
+3 parts of the setting tab
+   1. general: you can choose the concurrency number depending on the number of jobs the recipe processes simultaneously. You can also select a higher number for high-volume transactions.
+   2. data retention: you can set a data retention policy as instructed by your organization or team.
+   3. sharing: you can list your recipe in the Workato Community Library.
+Running a test job requires:
+   A fully configured trigger
+   Valid data mappings
+   Valid connections
+The Workato Community Library contains integrations and workflow automations built by the Workato community. Find, clone, and personalize them to your specific needs.
 Intelligent business processes:
 1. Enterprise-grade foundation
 2. citizen integrators
