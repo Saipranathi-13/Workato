@@ -190,9 +190,25 @@ BA or BSA Business Analyst or Business Systems Analyst. These describe job title
 
 Workato fit 101
 
-The business process: the set of actions and activity that different people or different roles doing task to get an outcome.
-Integration: allows data to flow b/w different business applications.
-
+The business process: the set of actions and activities that different people or different roles doing task to get an outcome.
+Integration: allows data to flow b/w different business applications.(Accessing data from apps)
+Automation:(process & task focused)  It is the technology-enabled automation of tasks or business processes
+How integration and automation work together: Integration at the core of automation
+Integration (data automation)-->Task automation--> Process automation--> Enterprise automation.
+Different types of integration:
+         Swivel chain integration(Fully manual): their is a person they lookup data from one application and re-type the data in other application.
+         File-based integration: (80% comapny's use this apporach) export the data one system and store that data in csv file and then converts into the file which the other system can read.
+         API-based integration: one system system send the data by using API and then the data can be in any format to the other application in that application we can update the data.
+         UI-based integration: UI will lookup data in one application screen and then enter data in other application screen.
+         Database integration: effectively connect to the data base application and select the data and we can push the data directly to the other applications database.
+         Mixed interface Integration: get the data from one application and transfer the data into file and then push the data into other application.
+Problems in using custom scripts and code:
+         unreliable
+         difficult to support
+         very time intensive
+         like jenga-can easily crumble 
+         can't easily monitor
+         limited experts understand it
 
 
 
