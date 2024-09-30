@@ -116,6 +116,7 @@ Error Handling: used to monitor actions and retry failed steps
 configuring error monitoring and handling:
 1. retry the sequence of actions
 2. take remedial actions
+we can retry 3 times in the monitor action block.
 common mistakes:
 1. using too much try/catch
 2. neglecting to mark the job as "failed" when using the stop action
@@ -132,7 +133,7 @@ Variables: placeholder to store data used to refer the information and also we c
 common use cases of variables:
 Transforming data
    Formulas- reducing complexity with variables
-   Lists
+   Lists- simplify operations and actions on muti-row outputs of lists
 An uninitialized variable has a value of null or nill.
 Environment properties can be re-used in recipes. 
 Default value of a variable with a type of "integer" if it is not specified by the user- nill
