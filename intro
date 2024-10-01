@@ -134,6 +134,16 @@ common use cases of variables:
 Transforming data
    Formulas- reducing complexity with variables
    Lists- simplify operations and actions on muti-row outputs of lists
+           Basic Lists: rows are self-contained where all the information required is explicitly expressed in each filed
+            nested list: details of the rows in a paremt list are contained in a separate child list.
+Mapping data in List
+   1. Directly into an action without list processing:
+   2. Into an action with a repeat step 
+   3. into an action with a list input
+Processing list in recipes:
+    1. search records in an application(search related action)
+    2. Get list of records
+    3. Processing CSV rows
 An uninitialized variable has a value of null or nill.
 Environment properties can be re-used in recipes. 
 Default value of a variable with a type of "integer" if it is not specified by the user- nill
