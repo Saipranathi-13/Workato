@@ -260,8 +260,22 @@ HR bot: helping you execute end-to-end hiring, onboarding and other HR processes
 This bot makes it easy to review feedback from candidate interview panels that would normally live within a recuriting systems.
 3-Worded new command trigger: to uniquely identify & execute wrokbot for slack recipes for their specific workflows.
 Slash command is a trigger that's baked into a 3-worded new command trigger. this menas that a workbot recipe can be trigger from both slack interactive components such as slack buttons, select menus, Datapickers etc. and by typing slash "/" followed by the command name.
-
-
+Global shortcut: similar to a slash command can ne invoked anywhere in slack execute a workflow that doesn.t require context.
+Message shortcut: useful in workflows where the starting point is a slack message you'd like to extract with other background details.
+The New Dynamic Menu Event Trigger is used to dynamically present a list of options in a select menu based on what users type in real time.
+      Trigger that is always paired with a return menu options action.
+      Always involves a minimum of 2 recipes
+      A parent recipe that creates the select menu.
+      A child recipe is invoked from the parent recipe to perform three important things.
+The child recipe:
+         1. It monitors for dynamic menu events from dynamic menus in modals or trigger parameters.
+         2. It dynamically retrieves menu options from backend systems, based on the type-ahead and any search parameters
+         3. It returns the menu options to the primary or parent recipe, which will the continue the workflow.
+Tips to improve your post:
+         1. slack markdown and emojis
+         2. Attachement Message field
+         3. Attachment colors
+         4. Attachment title links
 
 
 
