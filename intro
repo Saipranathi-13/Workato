@@ -279,6 +279,37 @@ Tips to improve your post:
 
 
 
+Batch/Bulk processing:
+It is a method of running high-volume,repetitive data jobs.
+The batch method allows users to process data with little or no use interaction.
+Why batch processing:
+      efficient way of moving large volumes of data across systems.
+Use cases:
+      Business intelligence
+      case management
+      order management
+      Marketing operations
+      file upload
+      Multi-instamce sync
+Batch triggers:
+Batching enables you to process multiple rows of data or multiple records with just one job.
+Batch actions are typically of the form:
+      create batch
+      update batch
+      upsert batch records: it updates if the record exists or creates, if the record doesn't exist.
+               Updates or creates multiple records in a single action
+               requires a list of records with id's to be updated as the input
+Bulk Actions: It ensures that you can do large quantities of processing while minimizing the users wait time.
+Useful in business processes that requires mass data transcations and syncing data information.
+Difference b/w batch and bulk
+         1. when using batch processing it can control the no of records or data to be used by configuring the batch size.
+         2. For bulk actions, it pushes large amounts of data in one go.
+create bulk:
+      create list of new records in a single action
+      Field configuration allows data mappings for creation of records
+Upsert bulk:
+      create list of new records in a single actions and update list of exisiting records
+      A primary key such as external ID is required to determine whether a record exists
 
 
 
