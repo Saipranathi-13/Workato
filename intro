@@ -233,9 +233,33 @@ Parameters schema: Define data passed in from parent recipe to pass on to the ch
 result schema: configure data to return to parent recipe.
 recipe functions can be used in Error handling, New customer workflow, new It ticket helpdesk,rehire workflow, reusable update employee workflow.
 
+Enterprise Workbot for slack
 
-
-
+Workbot is a bot platform that looks & feels like a custom-built internal app. It allows you to eliminate app-hopping and bridge your business applications into one interface,right within slack.
+Instead of switching b/w multiple windows, bots provide a minimalistic presentation of critical actions in a single pane of glass.
+How does work bot works:
+      1. connect to any app with APIs like REST and SOAP, databases,or file systems.
+      2. Define the trigger
+      3. Define the actions
+      4. Execute the workflow
+2 simple kinds of bots:
+         1. Click-navigation chatbot: involoves through a consistent and predictable UI to execute tasks.
+         2. Natural language chatbots:which utilize AI from tools and engines like Google Dialogflow, Amazon lex, and IBM wtason to provide a conversational experience in executing tasks.
+Accelerators are Workato's pre-packaged solutions for common automations with high resuability across industries.
+Lead Bot: An intuitive bot whose goal is to deliver, review,qualify and assign leads-all with a custom UX designed for speed.
+Lead bot helps in:
+      Book more meetings
+      connect with leads
+      create a top-tier experience for new customers
+Firefighter Bot: a helpful assistant focused on facilitating internal requests.
+      putting out fires
+      solve many small problems at once
+using this bot we can set automatic reminders and escalations and create and approve requests, all without leaving your slack window.
+this is more used for IT helpdesk and lifecycle management.
+HR bot: helping you execute end-to-end hiring, onboarding and other HR processess.
+This bot makes it easy to review feedback from candidate interview panels that would normally live within a recuriting systems.
+3-Worded new command trigger: to uniquely identify & execute wrokbot for slack recipes for their specific workflows.
+Slash command is a trigger that's baked into a 3-worded new command trigger. this menas that a workbot recipe can be trigger from both slack interactive components such as slack buttons, select menus, Datapickers etc. and by typing slash "/" followed by the command name.
 
 
 
