@@ -313,6 +313,53 @@ Upsert bulk:
 
 
 
+CSV tools by Workato
+
+
+CSV file overview:
+Comma separated values(CSV) file:this files are the one of the most commonly used files for exchanging information b/w system architecutures.
+      Text file
+      Stores tabular data
+      Human-readable plain text
+      Each line=one data record
+      same no of fields
+      separated by comma
+Delimiters: A delimiter is a sequence of one or more characters for specifying the boundary between separate, independent regions in plain text, mathematical expressions or other data streams. 
+Enclosing characters: You can also specify enclosing characters that mark both the start and end of a region of text, such as single or double quotation marks.
+CSV use cases in workato: Keep track of client calls
+To convert CSV content into usable datapills, you can parse them with Workato's built-in CSV parser or try a connector-specific CSV parser.
+Certain connectors have triggers/actions that can parse CSV content. These are called connector-specific parsers or external parsers.
+csv tools by workato:Workato tool available as an action in any recipe and can parse up to 50k rows.
+Parsing with CSV Tools by Workato: 
+
+Working with databases: 
+
+All database connectors give you the option to connect through an on-prem agent.
+To connect to a relational database in a virtual machine, we need:
+         username and password
+         windows authentication
+         hostname + port of the database
+To interact with your tables, the lowest set of privileges of the connected user should be set.
+Connected user requires at least select privileges for chosen database.
+Different triggers in database:
+         New row
+         New row/updated row(batch)
+         New row via custom sql
+         New row/updated row via custom SQL: using sql queries
+         Scheduled query(batch): this will execute sql query in specified schedule
+RDBMS apps can dispatch in batch/bulk processes. 
+Triggers with batch/bulk processes can be used when dealing with hundrends or thousands of records.
+Performing CRUD(create, read,update,delete) operations:
+other that crud we have select and execute
+
+
+
+
+
+
+
+
+
 
 
 
