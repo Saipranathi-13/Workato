@@ -354,15 +354,31 @@ other that crud we have select and execute
 
 
 
+RecipeOps:
 
 
+Recipe Ops is a connector in Workato that enables the building of recipes to monitor and manage other recipes. Workato customers use RecipeOps to automate monitoring and recovery from errors and for other administrative functions.
 
-
-
-
-
-
-
-
+Recipe Watch(Status and health):
+      Monitor mission-critical automation
+      Automatically start/stop during planned downtimes
+      Status reporting
+Automated Recovery(reduce unplanned downtime)
+      Reduce unplanned downtime
+      Custom workflows based on error types and messages
+      Lossless pause, resume, auto-retry
+Intelligent operations(rule based ops and bots):
+      Custom rule-based bots, reporting, recovering
+      Workflows when new collaborators join
+Triggers in recipeops:
+Failed Jobs: The failed job trigger is able to monitor all active recipes or selected recipes, for failed jobs. This is useful in ensuring that key recipes are monitored and corrective actions, including notifications, can be automated.
+Recipe Started/Stopped by Workato/User: This trigger allows users to build contingencies for key recipes that should/not be started/stopped. For example, enforce a restart logic or setup customer escalation policies to inform key personnel when the recipe has been stopped.
+Account Connected/Disconnected: These trigger monitors apps connected/disconnected in Workato. On occasions, app connections can become invalid due to several reasons:
+         app credentials were changed and the connection was not updated correspondingly in Workato
+         connected user doesn't have the right set of permissions to read/write selected records
+         permissions of the connected user were changed to a reduced scope
+Customer Usage Threshold Reached: This will monitor all customers and triggers when a customer reaches thresholds of their usage limits for tasks according to their plan. Users will receive an event for every 10% of usage.
+Member Invitation Accepted: For Workato users who are team owners, admins, or have been given permissions to, they can monitor their collaborators who they have invited in their Team workspace.
+Packaged Deployed: Using this trigger will receive a notification when a package is deployed in your Workato Account.
 
 
