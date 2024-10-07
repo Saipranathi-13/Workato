@@ -391,4 +391,34 @@ Actions in recipeops:
                         Dynamic list - Use this if the number of items or their content depends on another list. This is the most common input mode used. 
                         Fixed list - Use this if you know the total number of items and their content. This input mode is infrequently used.
                         List Connection: This action is useful to display the details of a specific connection or a list of connections. Connections can be filtered by name or recipe. Result is limited to 1000 recently updated connections.
-                        
+
+HTTP connector
+
+
+Workato HTTP Connector enables you to build integrations with any cloud applications that have an HTTP-based API and to build additional actions on the Workato platform.
+Pros and cons of HTTP conector:
+     Pro: The HTTP connectors enables quick connectivity to custom applications or application connections not yet available through workato.
+      Cons: connectors is unable to handle certain complex API functionality.
+      Pro: It is suitable for one-off requirements to connect to add/or perform an action within an application.
+      Cons: Actions are not scalable.
+There are two common types of web service APIs: Simple Object Access Protocol (SOAP) and Representational State Transfer (REST).
+Workato communicates with any API using HTTP Connector:
+      connections & Authorization
+      request
+      response
+HTTP actions enable you to create custom requests and response schemas for HTTP-based APIs.
+After you have setup your HTTP connection, you can now configure HTTP actions. Within the HTTP connector, you have the choice of two actions:
+            Send request
+            Send request and wait for response (private preview)
+
+
+
+
+
+
+
+
+
+
+
+
