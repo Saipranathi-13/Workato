@@ -371,14 +371,24 @@ Intelligent operations(rule based ops and bots):
       Custom rule-based bots, reporting, recovering
       Workflows when new collaborators join
 Triggers in recipeops:
-Failed Jobs: The failed job trigger is able to monitor all active recipes or selected recipes, for failed jobs. This is useful in ensuring that key recipes are monitored and corrective actions, including notifications, can be automated.
-Recipe Started/Stopped by Workato/User: This trigger allows users to build contingencies for key recipes that should/not be started/stopped. For example, enforce a restart logic or setup customer escalation policies to inform key personnel when the recipe has been stopped.
-Account Connected/Disconnected: These trigger monitors apps connected/disconnected in Workato. On occasions, app connections can become invalid due to several reasons:
-         app credentials were changed and the connection was not updated correspondingly in Workato
-         connected user doesn't have the right set of permissions to read/write selected records
-         permissions of the connected user were changed to a reduced scope
-Customer Usage Threshold Reached: This will monitor all customers and triggers when a customer reaches thresholds of their usage limits for tasks according to their plan. Users will receive an event for every 10% of usage.
-Member Invitation Accepted: For Workato users who are team owners, admins, or have been given permissions to, they can monitor their collaborators who they have invited in their Team workspace.
-Packaged Deployed: Using this trigger will receive a notification when a package is deployed in your Workato Account.
-
-
+         Failed Jobs: The failed job trigger is able to monitor all active recipes or selected recipes, for failed jobs. This is useful in ensuring that key recipes are monitored and corrective actions, including notifications, can be automated.
+         Recipe Started/Stopped by Workato/User: This trigger allows users to build contingencies for key recipes that should/not be started/stopped. For example, enforce a restart logic or setup customer escalation policies to inform key personnel when the recipe has been stopped.
+         Account Connected/Disconnected: These trigger monitors apps connected/disconnected in Workato. On occasions, app connections can become invalid due to several reasons:
+                        app credentials were changed and the connection was not updated correspondingly in Workato
+                        connected user doesn't have the right set of permissions to read/write selected records
+                        permissions of the connected user were changed to a reduced scope
+         Customer Usage Threshold Reached: This will monitor all customers and triggers when a customer reaches thresholds of their usage limits for tasks according to their plan. Users will receive an event for every 10% of usage.
+         Member Invitation Accepted: For Workato users who are team owners, admins, or have been given permissions to, they can monitor their collaborators who they have invited in their Team workspace.
+         Packaged Deployed: Using this trigger will receive a notification when a package is deployed in your Workato Account.
+Actions in recipeops:
+            Stop/Start Recipe: This allows specified recipes to be started/stopped. A single recipe can be selected from a picklist. Alternatively, a selected recipe can be specified by ID.
+            Get Account Details: Get information about the Workato account, such as subscription plan type, allotted and remaining transaction counts, recipe, and connection counts.
+            Search Job History: This action lists the last 100 jobs by default. This action lets
+                                 Users filter by job status e.g. show failed jobs only
+                                 Users filter by date range as well
+            Rerun Jobs: Using RecipeOps can help to rerun singular or bulk jobs in a specified recipe. This action requires a Job ID to be rerun. 
+                        Usually these datapill can be retrieved from a RecipeOps trigger/action.
+                        Dynamic list - Use this if the number of items or their content depends on another list. This is the most common input mode used. 
+                        Fixed list - Use this if you know the total number of items and their content. This input mode is infrequently used.
+                        List Connection: This action is useful to display the details of a specific connection or a list of connections. Connections can be filtered by name or recipe. Result is limited to 1000 recently updated connections.
+                        
