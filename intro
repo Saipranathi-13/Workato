@@ -484,6 +484,93 @@ Incident Manager       Application Admin                       Support problem r
                        Centralized IT team                     Can view job reports in prodution enviroment
                        Eg: HR Manager                          Cannot create/edit recipes in prodution environment 
 
+Recipe Lifecycle stages:
+         Plan for building and operating automations
+         Defines a set of steps to help deliver automations
+         Improve teams overall effectiveness
+Seamless collaboration with RLCM:
+         Span multiple teams from differnr business units
+         Manage and track tasks when you have several projects moving together
+         vital to cohesive organization working towards common goal
+
+RLCM:
+      Discover: change management
+                     Adapt change and release management processes
+                     intake and manage automation projects
+                     Track and manage automation change requests as independent projects.
+                     Prioritize change requests
+                     identify and enforce project workflow to best suit organization
+                     Review and approval stages for each change
+      Discover: Dependency Management
+                     Manage dependencies b/w recipes, connections, lookup tables etc
+                     critical function of managing automation lifecycles
+                     Analyze and asses impact on shared assets before making changes
+                     Coordinate shared asset changes such as calloble recipes or custom connectors.
+                     Identify releases that will deploy shared asset changes in production
+
+
+      Implement: Recipe Review
+                     Essential checkpoint
+                     Enforce standards
+                     Adhere to security guidelines      
+                     Ensure quality deliverables
+                     Ensure compliance to security standards, naming conventions, design best practices and more
+                     Facilitate recipe review through a pull request(PR) feature of an external version control system.
+                     Provide review comments or request changes, and adjudicate changes for next lifecycle stage
+      Implement: Testing
+                     Inadequate testing can cause productivity loss, system outages, and data inconsistencies
+                     Risk being out of compliance with laws, internal policies or regulatory requirements.
+                     Test recipes before going live
+                     Check recipes for defects and fitness for business requirements to ensure they perform efficiently
+                     Have a dedicated Quality Assurance team for testing.
+                     Devlopers can test recipes to perform functional testing
+                     One or more business stakeholders perform functional testing
+                     Validate automation addresses user expectations.
+      Implement: Testing best practices
+                     Understand end-to-end workflow and applications involved
+                     Identify different test scenarios
+                     test scenarios should provide adequate coverage including error handling validation
+                     Test cases should include test data, preconditions, and expected outcomes
+                     Identify and plan for non-functional testing needs
+                     Test every change
+      Implement: Regression Testing 
+                      Design automations using callable recipes to perform business logic
+                      Group multiple test recipes in a test suite for use in CI/CD pipeline
+      Implement: versioning
+                      Every time you save a recipe a new recipe version is created
+                      optonally use external version control systems to maintain environment snapshots
+                      Directly map workato packages in external version control systems. 
+                      Avoid making recipe changes outside of workato platform
+
+
+      Operate: Automation
+                  Lookup tables maintain lists of important recipes
+                  Monitor status of critical recipes with recipeOps
+                  Execute steps of restart recipes or send notifications with recipeOps if ctitical errors encountered
+                  Manage third-party application planned downtime
+                  Maintain schedule in lookup table
+                  Automatically stop and start recipes for maintenance window
+                  Restart recipes to consume any unprocesses business events
+
+                     Automated Monitoring:
+                                 Automated monitoring of mission-critical automations with recipeops
+                                 Automatically manage planned downtime
+                                 status alerts
+                     Automated Recovery:
+                                 Zero event loss automation pause,resume, and auto-retries
+                                 Business processcentric custom recovery workflow
+                                 Workbot based reporting recovery
+ Automated Monitoring +  Automated Recovery = Intelligent Operations
+                     Intelligent Operations:
+                                 Increase operational uptime
+                                 Discover and troubleshoot operational and business process issues faster
+                                 Increased stakeholders trust
+                                 Automate workflows to manage platform collaborators
+
+      Operate: Auditing
+                     Regular compliamce audits of production environments
+                     Governance and oversight ensures only approved changes are promoted to production
+                     Regular track changes made to recipes, connections, folders, and more
 
 
 
