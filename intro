@@ -535,7 +535,7 @@ RLCM:
                      Test every change
       Implement: Regression Testing 
                       Design automations using callable recipes to perform business logic
-                      Group multiple test recipes in a test suite for use in CI/CD pipeline
+                      Group multiple test recipes in a test suite for use in CI/CD(continous integration and delivery) pipeline
       Implement: versioning
                       Every time you save a recipe a new recipe version is created
                       optonally use external version control systems to maintain environment snapshots
@@ -571,6 +571,62 @@ RLCM:
                      Regular compliamce audits of production environments
                      Governance and oversight ensures only approved changes are promoted to production
                      Regular track changes made to recipes, connections, folders, and more
+
+Manifest: It is a record of all the selected recipes and their dependencies.
+Exported package includes all selected recipes and their dependencies need for automation to work
+Release types:
+            Major:
+                  New automation or major enhancements
+                  All assets are built,test and implemented together
+                  Regressing tested to ensure zero impact on existing bevaior
+            Minor:
+                  Includes only changes assets since last release
+                  Limited testing requirements
+                  Minimal impact on existing business process behavior
+            Bug-fix:
+                  Production issues fixed with configuration changes
+                  Production issues fixed with recipe changes
+
+Release planning:
+            Build & test Plan
+                        Approved changes
+                        test results
+                        user acceptance criteria
+            Deployement plan
+                        Release package
+                        Rollback plan
+                        Production freeze schedule
+            validation plan
+                        Deployment approval
+                        Release success validation
+            communication plan
+                         End-user communication
+                         End-user training
+            Review plan
+                         Monitor release
+                         improve metrics
+                         Lessons learnt from feedback for next release
+
+
+Continous Integration(CI):
+     Benefits:
+            Faster release cycles
+            Deliver quality automations
+      Goal:
+            Automate way teams build,test and package automations
+            helps automate delivery to multiple enviroments
+            Easier for teams to coordinate deployment,run quality controld on release, and reduce errors.
+
+
+
+Task Optimization
+
+
+
+
+
+
+
 
 
 
