@@ -413,6 +413,88 @@ After you have setup your HTTP connection, you can now configure HTTP actions. W
 
 
 
+Recipe Lifecycle Management for Environments 
+
+It is a series of steps your team can follow, from discovering automation ideas too implement and running workflows in production.
+Help streamline end-to-end automation delivery process
+Applies to any project regardless of methodology
+Benefits of Recipe life cycle management:
+      Improve productivity through effective collaboration
+      Enhance business responsivesmess to change
+      Increase business value hrough improved quality
+Environment strategy: It is all about planning and structuring different enviroments. 
+Good environmrnt strategy helps multiple teams collaborate efficiently.
+benifits of Environment strategy:
+      We recommend having atleast 3 seperate environments for Dev, Test, and Production
+      Improve resilience by managing disruptions
+      Enhance security and compliance
+      Better control with seamless handover b/w teams
+      Facilitate training of new members in a production-like environment
+Environment strategy:
+      Define lifecycle stages
+      Identify individual roles and responsibilities
+      Identify how many different teams you need to support
+Decentralized Governance:We have a sales team and finance team building recipes independently for compliance reasons.
+You can set up a seperate development, test and production environment for each group.
+
+                     Pros                                    Cons
+
+            Seperation of concerns                     Duplication of efforts
+
+            Enhanced control                           Enforcing best practices across teams
+
+Centralized Governance: It is to segment one or more team accounts to allow access to diff folders by diff teams.
+
+
+                     Pros                                             Cons
+
+            Consistent governance processes                     Role management
+
+            Prevents shadow IT                                  Increased audit requirements
+
+Roles and responsibilities:
+
+                        Applicate Admin                        end-to-end change owneeship
+Change Owner            Application Support                    Implement and test changes
+                        Functional Analyst                     can create/edit recipes in non-production environment
+                        Eg: HR Analyst                         Cannot to create connections
+                                                               
+
+                                                               
+                        Business SME                           Assess and authorize changes
+Change Manager          Process Analyst                        Coodination and communication
+                        Business Analyst                       Oversight and ownership of the full worakto platform
+                        Eg:Platform Admin                      Full access to platform and manages core security configuration
+
+                                                               
+                        Operations lead                        Represent change Advisory Board
+Change Approver         COE lead                               Maintain devlopment standards
+                        Solution Architect                     
+
+
+                       Operations Engineer                    Plan and manage production releases
+Release Manager        COE lead                               Rollback and communication planning
+                       Application Admin                      Can import/export recipes b/w environements
+                       Eg: HR Operations                      Can create/update recipes in production environment
+
+
+
+                       Technical Business SME                  Monitor and report incidents
+Incident Manager       Application Admin                       Support problem resolution
+                       Centralized IT team                     Can view job reports in prodution enviroment
+                       Eg: HR Manager                          Cannot create/edit recipes in prodution environment 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
