@@ -701,7 +701,8 @@ RUN
 SCALE
       Automation Maturity & Improvement lever, a maturity level is used as an assigned grade with predetermined sets of criteria to evaluate the various parameters impacting the performance of enterprise automation practice.
       Automation Discovery is a  journey. To keep the momentum going and make automation core to optimizing operations and driving business value, it's imperative to have a consistent pipeline of potential automation candidates. 
-      Enterprise Automation Ecosystem lever focuses on how an Enterprise Automation platform fits within the Business Technology integration and automation tech stack ecosystem. While Enterprise Automation should cover the vast majority of scenarios for wall-to-wall automations, the reality is that there are multiple cases that will require a specialized platform to work in tandem with the Enterprise Automation Platform. 
+      Enterprise Automation Ecosystem lever focuses on how an Enterprise Automation platform fits within the Business Technology integration and automation tech stack ecosystem. While Enterprise Automation should cover the vast majority of scenarios for wall-to-wall automations, the reality is that there 
+               are multiple cases that will require a specialized platform to work in tandem with the Enterprise Automation Platform. 
 Phased approach to automation at scale:
       Incubation: start small with an Automation First Mentality             
       Acceleration:Grow organically through an Automation Factory
