@@ -718,6 +718,7 @@ OPA Features:
                         communicating using standard ports.
          Complete control: Fully controlled and administered by customers.
          Extensible : OPA SDK to extend functionality eg: custome authentication.
+OPA Groups:The workload is distributed evenly to all agents in an on-prem group.
 
          
 
