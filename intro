@@ -709,6 +709,19 @@ Phased approach to automation at scale:
       Institutionalization: Become faster over time with Automation at scale
 
 
+On-Prem Agent overview:
+
+OPA: ON-Premise, has been exclusively used to refer to software that is deployed onto infrastructure that is fully controlled by an organization such as physical servers and datacenters.
+On-Prem is required in order to allow users of workato to build out recipes which need to communicate with on-prem applications securely.
+OPA Features:
+         Secure Tunnel: Resides inside the corporate firewall. 
+                        communicating using standard ports.
+         Complete control: Fully controlled and administered by customers.
+         Extensible : OPA SDK to extend functionality eg: custome authentication.
+
+         
+
+
 
 
 
