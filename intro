@@ -657,7 +657,8 @@ SCALE           Automation Maturity          Automation Discovery             En
                   & Improvement
 
 GOVERN
-      Intake & prioritization involve two parts. First, an intake process for stakeholders to submit new project requests, automation ideas, and improvement suggestions. A well-defined project request or intake process eliminates back and forth between different stakeholders and streamlines collaboration.
+      Intake & prioritization involve two parts. First, an intake process for stakeholders to submit new project requests, automation ideas, and improvement suggestions. A well-defined project request or intake process 
+                  eliminates back and forth between different stakeholders and streamlines collaboration.
                               Second, is the prioritization of automation requests. It provides a framework for defining the business value and complexity of requests so that everyone has a shared understanding of a project's priority and success metrics. 
                               Intake & prioritization allows teams to organize and update their backlog to work on the highest business impact requests and creates cross-functional visibility where all stakeholders and business teams know the status of their requests.
       Architecture & Design refers to the practice of defining the architectural styles and design principles that builders should follow when building new Workato Assets. 
@@ -682,7 +683,8 @@ ADOPT
       Champions & Evangelism focuses on spreading the word about how automation can solve business problems and the value that it can bring.
       Community is an important tool to build collaboration and develop a culture of automation by providing a program for guidance and practical experience, idea exchange, and fostering connections across team.
 RUN 
-      Project Execution with a low-code/no-code development approach, the Workato platform is built to deliver with speed and agility. Adopting lean automation with a Scrum-based  Agile delivery approach can complement the platform capabilities and gives a quick turnaround to deploy, execute the pilot and convert it into a production version.
+      Project Execution with a low-code/no-code development approach, the Workato platform is built to deliver with speed and agility. Adopting lean automation with a Scrum-based  Agile delivery approach can complement 
+                  the platform capabilities and gives a quick turnaround to deploy, execute the pilot and convert it into a production version.
       Capacity Planning is the practice of calculating (and predicting) the required capacity (either the number of recipes or task consumption) to support ongoing and future initiatives.
       Support Models describe the different channels any given user can leverage for:
                      Development support (e.g. if they get stuck on a particular recipe) 
@@ -701,7 +703,8 @@ RUN
 SCALE
       Automation Maturity & Improvement lever, a maturity level is used as an assigned grade with predetermined sets of criteria to evaluate the various parameters impacting the performance of enterprise automation practice.
       Automation Discovery is a  journey. To keep the momentum going and make automation core to optimizing operations and driving business value, it's imperative to have a consistent pipeline of potential automation candidates. 
-      Enterprise Automation Ecosystem lever focuses on how an Enterprise Automation platform fits within the Business Technology integration and automation tech stack ecosystem. While Enterprise Automation should cover the vast majority of scenarios for wall-to-wall automations, the reality is that there 
+      Enterprise Automation Ecosystem lever focuses on how an Enterprise Automation platform fits within the Business Technology integration and automation tech stack ecosystem. While Enterprise Automation should cover the vast majority of scenarios
+                     for wall-to-wall automations, the reality is that there 
                are multiple cases that will require a specialized platform to work in tandem with the Enterprise Automation Platform. 
 Phased approach to automation at scale:
       Incubation: start small with an Automation First Mentality             
@@ -721,8 +724,35 @@ OPA Features:
 
          
 
+Introduction to Connector SDK
 
 
+
+A connector allows Workato to interact with a single application through a series of triggers and actions. 
+Triggers monitor for events that occur in the application you hope to connect to and kickstart a workflow of actions that we call recipes. 
+Actions carry out specific pre-defined operations in the target application.
+What is Connector SDK?
+                  Workato's Connector Software Development Kit, or SDK, is a powerful tool that allows you to build and deploy custom connectors to:
+                                       Provide connectivity when there are no out-of-the-box (OOB) connectors available for your use case
+                                       Support a wide range of authentication methods
+                                       Create triggers to pick up new events via webhooks or at frequent polling intervals
+                                       Build actions and pull/push data into an application
+                                       Design a recipe-building experience for your team members down to the very last detail
+                                       Leverage other Workato such as on-premise agents
+custom connectors are built just once but they are reusable and customizable for multiple recipes.
+Workato has a variety of features and functionalities and over a thousand OOB connectors to help you automate efficiently and effectively.
+            Custom connectors provide advanced flexibility.
+            Custom connectors also have a private scope by default which means that they are only visible and available to the connector owner. 
+            Custom connectors are built just once but they are reusable and customizable for multiple recipes.
+We recommend going through the following steps with both a product manager and a developer to ensure the needs of your customers are met.
+            Detail your integration use cases
+            Define your base set of objects
+                     As a start, we would recommend shortlisting 4 or 5 objects which you want to interact with through a recipe in Workato.
+            Explore possible actions and triggers
+                     The best connectors often have 2 to 3 actions and triggers which focus on core use cases that you want to achieve. You can always iterate and enhance the connector over time for every use cases as needs expand.
+            Review your connector plan
+The Workato Connector SDK platform uses Code Mirror for editing your connector code. When writing your connector code, you can see all syntax or code errors in real time. Any connector source code you write on the SDK platform will be 
+hosted in Workato's servers and is executed whenever a recipe using that connector is triggered.
 
 
 
