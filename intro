@@ -753,6 +753,66 @@ We recommend going through the following steps with both a product manager and a
             Review your connector plan
 The Workato Connector SDK platform uses Code Mirror for editing your connector code. When writing your connector code, you can see all syntax or code errors in real time. Any connector source code you write on the SDK platform will be 
 hosted in Workato's servers and is executed whenever a recipe using that connector is triggered.
+Throughout the entire custom connector process, you will be able to build, test, and release your custom connector directly from Workato's platform. This means working directly from the browser you have open 
+right now and never having to install anything onto your computer.
+Let's take a look at some common key-value pairs in a custom connector:
+      Connection: Connection configuration. 
+      Test: Executed to verify whether a connection has successfully been made.
+      Actions: Define actions and input fields for users to fill up.
+      Triggers: Start recipes and can either be implemented via polling (checking every few minutes) or webhooks (static or dynamic).
+      Object_definitions: Define commonly used input or output fields and reference them later on in your actions and triggers.
+      Pick_lists: This is where you can define lists of values
+      Methods: Functions which can be called from anywhere in the connector
+Workato schema: It is one of the building blocks of your custom connector.
+Lambda Functions: Each lambda function in Connector SDK receives arguments that can be used when you are defining the function's behavior. 
+Lambda functions are critical pieces of any custom sonnectors used to build your input and ouput fields for your custom connectors.
+They are defined by a "Lambda do" and "End" any code must be defined in b/w
+The Connection Block: handles everything related to your connection via three keys:
+            fields : allows the what inputs user of your connectors will need to give
+                     2 fields 
+                           API Key
+                           Domain
+            authorization: whatever logic needed to make the sucessful connection
+                                 accepts a hash which can have multiple keys:
+                                          type : tell about the what type of authentication is connection uses.
+                                          apply: where to place token user name and passwords and API keys
+            base_uri: optional and dectates the API base URL
+                        Accepts a lambda function with one argument. this argument ("Connect") allows you to refernece the user's given input defined in "fields".
+                        All other HTTP requests in the connectors can be defined as relative paths after this.
+                        Test key is a root level attribute of your custome connector.
+Basic authentication: Typically, a basic authentication requires a username and password combination when making requests. Make sure to include those two fields in the connection fields definition.
+API Key: API key authentication is an authentication method that traditionally asks users to generate API keys in the application that they want to connect to. This API key 
+         may be scoped to the permissions of the user generating them or permissions could be configured on a key by key basis.                          
+OAuth 2.0: The OAuth 2.0 Authorization code flow is a way for Workato to impersonate a specific user when authenticating to an API. This is done by getting the user's consent via a browser popup when they first attempt to connect.
+           With OAuth 2.0 Auth, you can define the authorization url. This url could also include additional information such as scope.
+           Some notes about OAuth 2.0:
+                        The acquire key is a lambda function that is invoked after we receive the OAuth2 callback from the API. Normally you can make the second call to the token endpoint from here.
+                        We have also defined additional keys to handle the refresh token. Scroll down to the next section to find the relevant guides corresponding to each type of OAuth2 variant we support.
+Custom auth: Custom auth allows you to handle almost any type of authentication by telling the console on exactly what to do.
+
+
+
+The Application Provisioning/ Deprovisioning Accelerator
+
+
+The Application Provisioning/Deprovisioning (APD) Accelerator helps organizations to fully automate the process of  adding, updating, or removing user access to applications when an employee is on-boarded or offboarded.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
