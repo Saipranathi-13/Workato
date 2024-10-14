@@ -798,6 +798,17 @@ The Application Provisioning/ Deprovisioning Accelerator
 The Application Provisioning/Deprovisioning (APD) Accelerator helps organizations to fully automate the process of  adding, updating, or removing user access to applications when an employee is on-boarded or offboarded.
 
 
+Autonomous operations framework accelerator
+
+
+The AOF Accelerator is a pre-packaged solution that provides a consistent and efficient error-handling solution for businesses managing ten or more recipes, across multiple use cases.
+AOF Functions: 
+              Error logging and visibility to ensure that there is visibility on errors encountered within recipes and can be leveraged for analyzing errors and taking corrective measures. 
+              Automated recovery from transient errors without human intervention such as errors related to the API rate limits or temporary unavailability of host servers.
+              Notifications & alerting ensure that the relevant persons are notified through the appropriate channels whether it be a channel on Slack, email, creating a ticket, or another application.
+              Periodic job reports utilize the Error Collation mechanism, which will talk about in a future lesson, to scrape specific recipes’ job history and provide consolidated reports as CSV files.
+The RecipeOps connector is essential in that it enables the building of recipes to monitor and manage active recipes. 
+
 
 
 
