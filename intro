@@ -810,13 +810,72 @@ AOF Functions:
 The RecipeOps connector is essential in that it enables the building of recipes to monitor and manage active recipes. 
 
 
+Collection by Workato:
+
+Collection provide you with actions that you can start working with such as 
+            Creating list in collections
+            creating list in collection from csv file 
+            Query lists in collection
+Collection work like a database where it can store lists, which correspond to databse table.
+collection by workato is List by workato on steroids.
+Robust native application
+Manipulate table data
+Synchronize related data across multiple systems
+mutable and searchable lists
+functions like a temporary SQL database
+         Supports statement in SQL syntax
+         Corresponds to a database table
+         Works with large datasets
+         only available within the job they are created in
+Creating lists on collections:
+Collection list action creates a collection list in the recipe from a list input.
+Querying list 
+         This action allows you to perform standard SQL queries on your lists.
+         Queries are used to find specific data by filtering explicit criteria and also help in manipulationg tons of data in an easy and quick way.
+Modifiying list: 
+         you can use the query list action to modify the list with insert or update query.
+Common mistakes :
+         Debugging
+Using a nested input list will cause an internal error when trying to create a collection.
+similar to databases, the 2D table only takes in non-nested data.
+Instead, use Mapper by workato to remap you suorce data into a flat first before creating a collection with it.
+Column names in your collection list cannot have spaces.
 
 
+OPA(on-prem Agent) manager:
+
+Workato’s OPA Manager Accelerator, or OPM Accelerator, provides a set of recipes which manages OPA’s across multiple networks.
+Enterprises having multiple OPAs have to go through many manual tasks to manage OPAs.
+No server access is required for a user to manage OPAs or retrieve troubleshooting logs.
+The manifest contains 14 recipes:
+         4 Slackbot recipes
+         10 functional callable recipes
+         1 scheduler recipe
+Connector SDK
+The OPM Accelerator package includes one Connector SDK called the Workato On-Prem API.
+There are three ways to connect your OPM Scripts.
+         OPM Scripts connection for Windows environment
+         OPM Scripts connection for Linux environment
+         On Prem Scripts API Connection
+The On Prem Scripts API is used to access Workato on-prem API features and gives you the ability to work with On-prem Groups and On-prem Agents.
+Once we have our scripts connected, we can start our recipes in the following order:
+                  Diagnostic recipes
+                  File management recipes
+                  Installatime management recipes
+                  Runtime management recipes
+                  Slack command recipes
+                  
 
 
+Enterprise Data Hub
 
 
-
+Workato’s Enterprise Data Hub (EDH) Accelerator provides a robust solution for efficiently managing your organization’s key master records and ensuring you have a single trusted source for this data that remains cleansed, enriched, and always up-to-date using near real-time data synchronization.
+The EDH Accelerator includes a collection of prebuilt recipes, starter data models, an easy to use connector, and a configurable schema and provides:
+         Pre-built integrations with Snowflake/SQL Server/PostgreSQL and various data sources to rapidly centralize, enrich, and cleanse data to be leveraged across the company.
+         Data validation rules & triggers for configuration-based data validation for all ingested records and triggers to notify stakeholders of potential issues.
+         Customizable data models that are usable out-of-the-box but can be tailored for your organization’s Customer 360 or Employee Data Hub projects.
+EDH Accelerator uses 8 API recipes, 9 callable recipes, and 2 active recipes,  which if utilized, may impact the costs of Workato for regular billing cycles.
 
 
 
