@@ -912,7 +912,12 @@ When an active recipe processes a trigger event. (i.e. actions in the recipe are
 The job report is a record of all processed jobs. For each processed job, you can view complete details.
 Each job consists of a trigger event and the sequence of actions is carried out, according to the recipe logic. This set and sequence of actions executed depend on the data of the specific trigger event.
 Job errors, also known as recipe execution errors, usually occur when a trigger event has been found, and a job is being processed, therefore typically showing up as recipe job errors. 
-
+404 Not Found: The record that you're trying to execute the action cannot be found (e.g Get, Update, Delete)
+415 Unsupported Media Type Errors: This indicates that the app refused to accept the request because of the payload format is in an unsupported format.
+400/422 Errors: There are multiple reasons why you encounter a 400 bad request.  This could be due to creating a duplicate record, Invalid data may have been passed in etc.
+429 Too Many Requests Errors: This HTTP response status code indicates that the user has sent too many requests in a given amount of time.
+500: This status code 500 is a generic error response. This means that the server encountered an unexpected condition that prevented it from fulfilling the request. 
+When there is no other error code suitable, this error code is usually returned.
 
 
 
