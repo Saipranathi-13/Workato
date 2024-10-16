@@ -918,6 +918,28 @@ Job errors, also known as recipe execution errors, usually occur when a trigger 
 429 Too Many Requests Errors: This HTTP response status code indicates that the user has sent too many requests in a given amount of time.
 500: This status code 500 is a generic error response. This means that the server encountered an unexpected condition that prevented it from fulfilling the request. 
 When there is no other error code suitable, this error code is usually returned.
+Recipe logic errors:the logic of your recipe makes or break your integration solution.
+            Incorrect recipe step indentations
+                     the indented steps under IF steps will only be carried out when the condition is met.
+                     indented steps under Repeat steps will be carried out for the records in the list.
+                     not indented steps will be executed when the recipe is started/tested.
+            Incorrect list management
+                     This logic error is seen when your recipe job seems to iterate through the list, but does not retrieve the different data from the list objects.
+            infinite looping
+                     Infinite loops is when it continuously fetching triggers events, even if no activity in your trigger app.
+                     single recipe infinte looping can occur when a recipe trigger monitors updates in the same object that it updates in an action.
+                     best practice is to create custom fields that are meant for identifying jobs synced by workato when doing bi-directional syncs.
+                     solution: Filtering out by using an integration user as a condition. 
+            unexpected trigger events(data duplication)
+            Missing trigger events
+                   that you may be experiencing no trigger events in your active recipe.
+                   trigger condition doesn't matches the event that is being implemented in the application.
+                   There are 3 possible trigger events:
+                              New record trigger: records are solely created.
+                              New/updates record trigger: monitors for any update to a record or when a record is newly created
+                              Updated record trigger: records only updated, now new record is made.
+
+
 
 
 
