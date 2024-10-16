@@ -879,9 +879,39 @@ EDH Accelerator uses 8 API recipes, 9 callable recipes, and 2 active recipes,  w
 
 
 
+Error Troubleshooting
 
 
-
+Recipe design errors: refers to errors caught while building recipes
+Errors will show when the user click on test or start recipe.
+         Missing required input fields
+         formula errors
+         invalid datapills
+         App connection errors
+Trigger errors:Trigger errors occur when the recipe tries to retrieve trigger events by polling the trigger app, but fails to fetch trigger events successfully. 
+As no trigger event data was retrieved, the recipe does not create a job in the first place. 
+There are different causes of why a trigger error occurs:
+Type of Cases:
+         When connection becomes invalid
+         When connected user does not have right permissions to retrieve trigger events
+         When API call times out
+         When trigger filters are logically incorrect or too restrictive
+         Automatically stopped after 60 trigger errors
+401: App connection becomes invalid and the recipe is unable to connect successfully to the trigger app to fetch trigger events.
+Reconnect successfully to trigger application.
+403: Connected user does not have the right permissions to fetch trigger events  
+Update the connected user's permissions to provide required read/write permission scopes.
+schema errors: Recipe makes an invalid API call, e.g. due to schema changes such as field deletion in the app that wasn't reflected in the recipe    
+Carry out a schema refresh for the recipes with schema errors.
+timeout error: Recipe makes an API call that times out while waiting for trigger events to be fetched. This is usually transient, i.e. the API server might be experiencing temporary downtime
+If transient, you should stop getting the error after a while. If an error keeps occurring, check the API uptime status of the app that the recipe keeps failing at, or reach out to your Customer Success Manager.
+Recipe encounters 60 successive action errors that are identified by Workato as an unauthorized error, rate limit error or schema error.
+Recipe will automatically be stopped.
+What are Jobs?
+When an active recipe processes a trigger event. (i.e. actions in the recipe are executed, it results in a job)
+The job report is a record of all processed jobs. For each processed job, you can view complete details.
+Each job consists of a trigger event and the sequence of actions is carried out, according to the recipe logic. This set and sequence of actions executed depend on the data of the specific trigger event.
+Job errors, also known as recipe execution errors, usually occur when a trigger event has been found, and a job is being processed, therefore typically showing up as recipe job errors. 
 
 
 
