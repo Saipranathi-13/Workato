@@ -370,6 +370,7 @@ Automated Recovery(reduce unplanned downtime)
 Intelligent operations(rule based ops and bots):
       Custom rule-based bots, reporting, recovering
       Workflows when new collaborators join
+HandsFree(Eliminate human labar)
 Triggers in recipeops:
          Failed Jobs: The failed job trigger is able to monitor all active recipes or selected recipes, for failed jobs. This is useful in ensuring that key recipes are monitored and corrective actions, including notifications, can be automated.
          Recipe Started/Stopped by Workato/User: This trigger allows users to build contingencies for key recipes that should/not be started/stopped. For example, enforce a restart logic or setup customer escalation policies to inform key personnel when the recipe has been stopped.
