@@ -985,7 +985,32 @@ Effiency Strategies:
          custom SDK
 
 
+API Platform
 
+API stands for Application Programming Interface, which is a mechanism that allows two applications to exchange information using a set of rules.
+an API provides the ability to interact with applications from within other applications.
+The following is the Anatomy of a typical REST API:
+1. endpoint: The Endpoint is the Address that you'd like to send your request or make a call to. 
+2. resource: Resource refers to the type of info that the API is tagged with/to. 
+3. Method: The method defines the operation with the resource and the allowed interaction with the resource.
+            GET	Get a resource from the server
+            POST	Create a resource to the server
+            PATCH/PUT	Update existing resource on the server
+            DELETE	Delete existing resource from the server
+4. Request Body?Query Params: Query parameters give you the option to modify your request with key-value pairs. Usually in the URL, 
+                              Query Parameters appears after the question mark (?) and each parameter pair is separated with an ampersand (&).
+5. Headers: Headers are additional details provided for communication between the client and the server.
+            The most common types of headers are:
+                 Authorization	Contains the authentication credentials for HTTP authentication.
+                 Content-Type	   Tells the client what media type (
+6. Response body: Response body contains information about the output and additional output ports.
+7. HTTP status codes: A status code is a three-digit integer. The first digit identifies the general category of response.
+                        Status       Code	Description
+                           1xx	indicates an information message only
+                           2xx	 indicates success of some kind
+                           3xx	redirects the client to another URL
+                           4xx   indicates an error on the client's part
+                           5xx	indicates an error on the server's part
 
 
 
