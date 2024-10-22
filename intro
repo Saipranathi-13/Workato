@@ -609,7 +609,8 @@ Release planning:
                          Lessons learnt from feedback for next release
 
 
-Continous Integration(CI):
+Continous Integration(CI):Continuous integration (CI) is a software development practice that involves regularly integrating code changes into a shared repository, often multiple times a day. 
+Continous Delivery(CD): This involves the seamless and automated delivery of software in a small and incremental way. 
      Benefits:
             Faster release cycles
             Deliver quality automations
