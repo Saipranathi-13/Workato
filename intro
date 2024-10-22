@@ -950,6 +950,39 @@ Recipe logic errors:the logic of your recipe makes or break your integration sol
 
 
 
+Task Optimization
+
+Every timde a recipe invkoes an action provided by a connector it counts as one task.
+Action in app   call recipe --- one task per step
+if/else condition   repeat action   handle errors --- not a task
+key factors of task usage:
+1. no of jobs
+2. no of events per job
+3. efficient processing of events
+Task Optimization Approach:
+identify 
+assess
+optimize
+Task Optimization strategies:
+Trigger strategies:
+         Polling Frequency
+         Trigger conditions
+         Batch/bulk triggers
+Batch/bulk Strategies
+         Batch/bulk
+         Filtering events
+         Delta SYnc
+         ELT pipeline
+         Streaming
+Effiency Strategies:
+         Formula mode
+         List processing
+         collections
+         Custom code
+         variable grouping
+         variable declarations
+         Response catching
+         custom SDK
 
 
 
