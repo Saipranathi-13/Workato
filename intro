@@ -658,6 +658,13 @@ RUN             Project Execution           Capacity Planning           Support 
 SCALE           Automation Maturity          Automation Discovery             Enterprise Automation Ecosystem
                   & Improvement
 
+Govern: Establish governance to ensure security and compliance.
+Enable: Empower teams through training and tools.
+Adopt: Promote adoption of automation within the organization.
+Run: Manage day-to-day operations, monitoring workflows.
+Scale: Expand automation across teams and processes.
+
+
 GOVERN
       Intake & prioritization involve two parts. First, an intake process for stakeholders to submit new project requests, automation ideas, and improvement suggestions. A well-defined project request or intake process 
                   eliminates back and forth between different stakeholders and streamlines collaboration.
